@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080809">
+<meta name="description" content="Psychotree — psychology tips, self-awareness, relationships, confidence and personal growth.">
+<title>Psychotree — Better Mind, Better You</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Psychotree home"><span class="tree-logo">♧</span><span class="brand-name">PSYCHO<span>TREE</span><small>Better Mind <b>•</b> Better You</small></span></a>
+  <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search any topic… confidence, relationships, sigma male, etc."><kbd>/</kbd></label>
+  <div class="top-actions"><button class="round" id="themeBtn" title="Toggle contrast">☾</button><button class="round" id="favJump" title="Favorites">♥</button><button class="round" id="savedJump" title="Saved tips">♧</button><button class="infinite" id="infiniteBtn">∞ <span>Infinite Tips</span></button></div>
+</header>
+<div class="layout">
+<aside class="sidebar">
+  <div class="navlist">
+    <button class="nav-item active" data-nav="Home">⌂ <span>Home</span></button>
+    <button class="nav-item" data-nav="Explore Categories">▦ <span>Explore Categories</span></button>
+    <button class="nav-item" id="randomBtn">⬡ <span>Random Tip</span></button>
+    <button class="nav-item" data-nav="Saved Tips">♧ <span>Saved Tips</span></button>
+    <button class="nav-item" data-nav="Favorites">♡ <span>Favorites</span></button>
+    <button class="nav-item" data-nav="History">◷ <span>History</span></button>
+  </div>
+  <div class="side-divider"></div><p class="side-label">FEATURED</p>
+  <div class="navlist">
+    <button class="nav-item" data-nav="Daily Dose">☼ <span>Daily Dose</span></button>
+    <button class="nav-item" data-nav="Top Rated">☆ <span>Top Rated</span></button>
+    <button class="nav-item" data-nav="Trending">♨ <span>Trending</span></button>
+    <button class="nav-item" data-nav="New Categories">✧ <span>New Categories</span></button>
+  </div>
+  <div class="side-quote"><p>“A better you<br>is a series of<br>small decisions.”</p><span class="quote-tree">♧</span></div>
+</aside>
+<main>
+  <section class="hero">
+    <div class="hero-art"><div class="red-haze"></div><div class="tree-illustration">♧</div><div class="root-lines">╱╲╱╲╱╲</div></div>
+    <div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> YOUR PERSONAL MIND TOOLKIT</div><h1>PSYCHO<span>TREE</span></h1><h2>Infinite Psychology Tips for Every Side of You</h2><p>Explore thousands of psychology tips across endless categories.<br>Understand yourself. Improve your mind. Build a better life.</p><button class="cta" id="heroGenerate">∞ &nbsp; Get Infinite Tip</button></div>
+  </section>
+  <section class="section categories-section" id="categoriesSection">
+    <div class="section-head"><h2><span class="section-icon">♧</span> Popular Categories</h2><button class="text-button" id="allCategories">View All ›</button></div>
+    <div id="categoryGrid" class="category-grid"></div>
+  </section>
+  <section class="section tips-section" id="tipsSection">
+    <div class="section-head"><h2><span class="section-icon sparkle">✦</span><span id="tipsHeading">Latest Psychology Tips</span></h2><div class="sort-wrap"><span>Sort by</span><select id="sort"><option value="newest">Newest</option><option value="quick">Quick reads</option><option value="action">Action-focused</option></select></div></div>
+    <div id="tipGrid" class="tip-grid"></div>
+    <div class="load-more"><button class="cta" id="moreBtn">Show more tips &nbsp; ↗</button><p id="feedNote">New combinations are generated as you explore.</p></div>
+  </section>
+  <section class="section saved-section" id="savedSection"><div class="section-head"><h2><span class="section-icon">♧</span> Your Saved Tips</h2><button class="text-button" id="clearSaved">Clear saved</button></div><div id="savedGrid" class="tip-grid"><div class="empty">Save a tip using its bookmark icon and it will appear here.</div></div></section>
+  <section class="disclaimer"><span class="disclaimer-icon">✳</span><div><h3>Psychology without the mind games.</h3><p>Psychotree emphasizes self-awareness, communication, boundaries, and healthy relationships. “Alpha” and “sigma” are internet archetypes, not scientific personality diagnoses. Tips are educational prompts, not a substitute for professional mental-health care.</p></div></section>
+  <footer><a class="footer-brand" href="#">♧ PSYCHOTREE</a><span>Stay curious. Stay kind. <span id="year"></span></span></footer>
+</main>
+<aside class="rightbar">
+  <section class="right-card saved-widget"><h3>▣ &nbsp; Your Saved Tips <span>›</span></h3><p>Save your favorite tips and come back to them anytime.</p><button id="savedButton">View Saved Tips</button></section>
+  <section class="right-card"><h3>♨ &nbsp; Trending Categories</h3><div id="trendingList" class="trending-list"></div></section>
+  <section class="right-quote"><p>“Your mind is<br>your most powerful<br>tool. Use it wisely.”</p><small>— PSYCHOTREE</small><div class="quote-tree">♧</div></section>
+</aside>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
